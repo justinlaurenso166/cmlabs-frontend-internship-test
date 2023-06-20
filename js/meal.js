@@ -45,9 +45,6 @@ $(document).ready(function () {
                 const originalUrl = meal_detail.strYoutube;
                 const embedUrl = originalUrl.replace("watch?v=", "embed/");
                 $("#youtube").attr('src', embedUrl)
-
-
-                console.log(meal_detail);
             },
             error: function (err) {
                 console.log(err);
