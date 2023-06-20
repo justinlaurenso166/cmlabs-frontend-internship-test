@@ -45,6 +45,10 @@ $(document).ready(function () {
                 const originalUrl = meal_detail.strYoutube;
                 const embedUrl = originalUrl.replace("watch?v=", "embed/");
                 $("#youtube").attr('src', embedUrl)
+
+                $("#current-category-name").click(function () {
+                    window.location.href = './../pages/category_detail.html?category-name=' + meal_detail.strCategory;
+                })
             },
             error: function (err) {
                 console.log(err);
