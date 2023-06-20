@@ -29,7 +29,7 @@ $(document).ready(function () {
                     categoryDetailList.append(li);
 
                     li.click(function () {
-                        window.location.href = '/pages/meal.html?id=' + meal.idMeal;
+                        window.location.href = '../pages/meal.html?id=' + meal.idMeal;
 
                     });
                 });
