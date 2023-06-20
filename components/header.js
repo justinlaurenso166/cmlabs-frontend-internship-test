@@ -6,7 +6,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header class="header">
-            <h1 class="font-bold text-2xl tracking-wide hover:cursor-pointer" > <a href="/">MealApp</a></h1>
+            <h1 class="font-bold text-xl sm:text-2xl tracking-wide hover:cursor-pointer" > <a href="/">MealApp</a></h1>
             <div class="hidden md:block lg:block xl:block">
                 <nav class="flex gap-10 font-semibold text-lg">
                     <a href="../index.html">Home</a>
@@ -17,7 +17,7 @@ class Header extends HTMLElement {
             </div>
             
             <div class="block md:hidden lg:hidden xl:hidden transition-all delay-75">
-                <img src="../img/hamburger.png" alt="menu" width="28" class="hover:cursor-pointer" id="menu">
+                <img src="../img/hamburger.png" alt="menu" width="22" class="hover:cursor-pointer" id="menu">
             </div>
         </header>
             
