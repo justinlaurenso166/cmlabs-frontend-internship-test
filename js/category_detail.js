@@ -10,7 +10,7 @@ $(document).ready(function () {
         $("#current-category-name").text(category_name);
 
         $(".title_detail").text(category_name + " Meals");
-
+        
         const categoryDetailList = $('#categoryDetailList');
 
         $.ajax({
@@ -18,7 +18,6 @@ $(document).ready(function () {
             url: 'https://www.themealdb.com/api/json/v1/1/filter.php?c=' + category_name,
             success: function (data) {
                 const meals = data.meals
-                console.log(meals)
                 meals.forEach(meal => {
                     const li = $('<li>').attr('class', 'category');
                     const image = $('<img>').attr('src', meal.strMealThumb).attr('alt', meal.strCategory).attr('class', 'category-image');
@@ -29,10 +28,7 @@ $(document).ready(function () {
                     categoryDetailList.append(li);
 
                     li.click(function () {
-                        const baseUrl = window.location.origin;
-                        const relativeUrl = '/pages/meal.html?id=' + meal.idMeal
-                        window.location.href = baseUrl + relativeUrl;
-
+                        window.location.href = './pages/meal.html?id=' + meal.idMeal;
                     });
                 });
             },
