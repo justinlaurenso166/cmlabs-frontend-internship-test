@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     const meal_id = getUrlParameter('id');
 
-    if (meal_id !== undefined || meal_id !== null) {
+    if (meal_id !== undefined && meal_id !== null && meal_id !== "") {
 
         $.ajax({
             type: 'GET',
@@ -50,5 +50,7 @@ $(document).ready(function () {
                 console.log(err);
             }
         })
+    } else {
+        window.location.href = './../pages/error.html';
     }
 });
