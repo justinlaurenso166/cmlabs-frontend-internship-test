@@ -11,6 +11,4 @@
     <li>Finish</li>
 </ol>
 
-<br>
-
 <h3>Online Demo: <a href="https://justin-cmlabs-frontend-internship-test.vercel.app/" target="_blank">Cmlabs Frontend Internship Test - Justin Laurenso</a></h3>
