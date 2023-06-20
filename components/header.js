@@ -17,7 +17,7 @@ class Header extends HTMLElement {
             </div>
             
             <div class="block md:hidden lg:hidden xl:hidden transition-all delay-75">
-                <img src="./../img/hamburger.png" alt="menu" width="28" class="hover:cursor-pointer" id="menu">
+                <img src="../img/hamburger.png" alt="menu" width="28" class="hover:cursor-pointer" id="menu">
             </div>
         </header>
             
@@ -43,9 +43,9 @@ $(document).ready(function () {
         show = !show;
 
         if(show){
-            $("#menu").attr('src','./../img/close.png')
+            $("#menu").attr('src','../img/close.png')
         }else{
-            $("#menu").attr('src','./../img/hamburger.png')
+            $("#menu").attr('src','../img/hamburger.png')
         }
     });
 });
