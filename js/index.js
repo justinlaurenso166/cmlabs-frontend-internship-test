@@ -16,7 +16,7 @@ $(document).ready(function () {
                 categoryList.append(li);
 
                 li.click(function () {
-                    window.location.href = './../pages/category_detail.html?category-name=' + category.strCategory;
+                    window.location.href = './pages/category_detail.html?category-name=' + category.strCategory;
                     
                 });
             });
