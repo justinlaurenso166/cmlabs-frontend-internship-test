@@ -1,5 +1,7 @@
 $(document).ready(function () {
     const categoryList = $('#categoryList');
+    const baseUrl = window.location.href.split('/').slice(0, -1).join('/');
+    console.log(baseUrl)
 
     $.ajax({
         url: 'https://www.themealdb.com/api/json/v1/1/categories.php',
@@ -16,10 +18,10 @@ $(document).ready(function () {
                 categoryList.append(li);
 
                 li.click(function () {
-                    const baseUrl = window.location.origin;
-                    const relativeUrl = '/pages/category_detail.html?category-name=' + category.strCategory;
-                    window.location.href = baseUrl + relativeUrl;
+                    const baseUrl = window.location.href.split('/').slice(0, -1).join('/');
+                    window.location.href = baseUrl + '/pages/category_detail.html?category-name=' + category.strCategory;
                 });
+
 
             });
         },
