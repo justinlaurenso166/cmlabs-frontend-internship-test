@@ -10,7 +10,7 @@ $(document).ready(function () {
         $("#current-category-name").text(category_name);
 
         $(".title_detail").text(category_name + " Meals");
-        
+
         const categoryDetailList = $('#categoryDetailList');
 
         $.ajax({
@@ -29,7 +29,9 @@ $(document).ready(function () {
                     categoryDetailList.append(li);
 
                     li.click(function () {
-                        window.location.href = '../pages/meal.html?id=' + meal.idMeal;
+                        const baseUrl = window.location.origin;
+                        const relativeUrl = '/pages/meal.html?id=' + meal.idMeal
+                        window.location.href = baseUrl + relativeUrl;
 
                     });
                 });

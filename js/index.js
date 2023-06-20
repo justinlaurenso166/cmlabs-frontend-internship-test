@@ -8,7 +8,7 @@ $(document).ready(function () {
             const categories = response.categories;
             categories.forEach(category => {
                 const li = $('<li>').attr('class', 'category');
-                const image = $('<img>').attr('src', category.strCategoryThumb).attr('alt', category.strCategory).attr('class','category-image');
+                const image = $('<img>').attr('src', category.strCategoryThumb).attr('alt', category.strCategory).attr('class', 'category-image');
                 const dimmer = $('<div>').attr('class', 'dimmer');
                 const categoryName = $('<span>').text(category.strCategory).attr('class', 'category-name');
 
@@ -16,9 +16,11 @@ $(document).ready(function () {
                 categoryList.append(li);
 
                 li.click(function () {
-                    window.location.href = '../pages/category_detail.html?category-name=' + category.strCategory;
-                    
+                    const baseUrl = window.location.origin;
+                    const relativeUrl = '/pages/category_detail.html?category-name=' + category.strCategory;
+                    window.location.href = baseUrl + relativeUrl;
                 });
+
             });
         },
         error: function (error) {
