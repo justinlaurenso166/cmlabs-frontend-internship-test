@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal</title>
+    <link href="./../dist/output.css" rel="stylesheet">
+    <script src="./../components/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div>
+        <header-component></header-component>
+
+        <main>
+            <div class="container py-10">
+                <div class="route">
+                    <div class="flex flex-row gap-2 md:gap-5 text-xl items-center flex-wrap">
+                        <span class="font-semibold"><a href="/">Home</a></span>
+                        <span><img src="./../img/chevron.png" width="22" alt="right arrow"></span>
+                        <span class="font-semibold">Foods</span>
+                        <span><img src="./../img/chevron.png" width="22" alt="right arrow"></span>
+                        <span id="current-category-name" class="font-semibold"></span>
+                        <span><img src="./../img/chevron.png" width="22" alt="right arrow"></span>
+                        <span id="current-meal" class="text-gray-400"></span>
+                    </div>
+                </div>
+
+                <div class="title_detail text-4xl sm:text-4xl md:text-5xl xl:text-5xl font-normal mt-14"></div>
+
+                <hr class="my-14">
+
+                <div class="content">
+                    <div>
+                        <h3 class="text-orange-500 font-bold text-xl"><span class="meal-area"></span> Culinary</h3>
+                    </div>
+                    <div class="instructions mt-6">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+                            <div class="meal-img">
+                                <img class="meal-image rounded-3xl">
+                            </div>
+                            <div class="flex flex-col gap-6">
+                                <div>
+                                    <h1 class="text-4xl">Instructions</h1>
+                                </div>
+                                <div class="instruction-paragraph flex flex-col gap-5 text-justify text-lg"></div>
+                                <div class="recipes">
+                                    <h1 class="text-4xl">Recipes</h1>
+                                    <div id="recipesList" class="mt-5 text-lg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial mt-20">
+                        <div>
+                            <h1 class="text-4xl text-center">Tutorials</h1>
+                            <div class="mt-6">
+                                <iframe width="100%" height="600" src="" id="youtube"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./../js/meal.js"></script>
+
+</html>

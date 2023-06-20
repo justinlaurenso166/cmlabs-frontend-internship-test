@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Detail</title>
+    <link href="./../dist/output.css" rel="stylesheet">
+    <script src="./../components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div>
+        <header-component></header-component>
+
+        <main>
+            <div class="container py-10">
+                <div class="route">
+                    <div class="flex flex-row gap-2 md:gap-5 text-xl items-center flex-wrap">
+                        <span class="font-semibold"><a href="/">Home</a></span>
+                        <span><img src="./../img/chevron.png" width="22" alt="right arrow"></span>
+                        <span class="font-semibold">Foods</span>
+                        <span><img src="./../img/chevron.png" width="22" alt="right arrow"></span>
+                        <span id="current-category-name" class="text-gray-400"></span>
+                    </div>
+                </div>
+
+                <div class="title_detail text-4xl sm:text-4xl md:text-5xl xl:text-5xl font-normal my-14"></div>
+
+                <div id="category_detail_list">
+                    <ul id="categoryDetailList"
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./../js/category_detail.js"></script>
+
+</html>
