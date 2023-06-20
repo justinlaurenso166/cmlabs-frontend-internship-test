@@ -7,7 +7,7 @@
 }
 
 .header {
-    @apply flex bg-white py-8 flex-row justify-between px-12 items-center border-b-2;
+    @apply flex bg-white py-8 flex-row justify-between px-6 md:px-12 items-center border-b-2;
 }
 
 .category {
@@ -41,4 +41,12 @@
 
 .container {
     @apply w-[90%] md:w-[80%] xl:w-[70%] m-auto;
+}
+
+.route {
+    @apply flex flex-row gap-2 md:gap-5 text-lg md:text-xl items-center flex-wrap;
+}
+
+.title_detail {
+    @apply text-3xl sm:text-4xl md:text-5xl xl:text-5xl font-normal my-14;
 }
