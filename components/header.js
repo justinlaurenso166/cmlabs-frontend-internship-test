@@ -16,7 +16,7 @@ class Header extends HTMLElement {
                 </nav>
             </div>
             
-            <div class="block md:hidden lg:hidden xl:hidden transition-all delay-75">
+            <div class="block md:hidden lg:hidden xl:hidden transition-all">
                 <img src="../img/hamburger.png" alt="menu" width="22" class="hover:cursor-pointer" id="menu">
             </div>
         </header>
