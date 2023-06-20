@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     const category_name = getUrlParameter('category-name');
 
-    if (category_name !== undefined || category_name !== null) {
+    if (category_name !== undefined && category_name !== null && category_name !== '') {
         $("#current-category-name").text(category_name);
 
         $(".title_detail").text(category_name + " Meals");
@@ -36,5 +36,7 @@ $(document).ready(function () {
                 console.log(err);
             }
         })
+    } else{
+        window.location.href = './../pages/error.html';
     }
 });
