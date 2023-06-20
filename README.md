@@ -2,8 +2,6 @@
 
 <h4>Created using HTML, TailwindCSS, Javascript, JQuery, Ajax</h4>
 
-<br>
-
 <h3>How to run this project : </h3>
 <ol>
     <li>Clone this repository</li>
